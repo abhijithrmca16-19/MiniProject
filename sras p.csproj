@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22D5F3B1-13E7-4FC6-A8FD-0060F75424E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sras_p</RootNamespace>
+    <AssemblyName>sras p</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="law\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="law\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="law\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="law\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="law\fonts\icomoon\icomoon.eot" />
+    <Content Include="law\fonts\icomoon\icomoon.ttf" />
+    <Content Include="law\fonts\icomoon\icomoon.woff" />
+    <Content Include="law\images\bus.jpg" />
+    <Content Include="law\images\hall1.jpg" />
+    <Content Include="law\images\mini.jpg" />
+    <Content Include="law\newreg.aspx" />
+    <Content Include="law\sass\bootstrap.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="law\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="law\sass\bootstrap\_alerts.scss" />
+    <Content Include="law\sass\bootstrap\_badges.scss" />
+    <Content Include="law\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="law\sass\bootstrap\_button-groups.scss" />
+    <Content Include="law\sass\bootstrap\_buttons.scss" />
+    <Content Include="law\sass\bootstrap\_carousel.scss" />
+    <Content Include="law\sass\bootstrap\_close.scss" />
+    <Content Include="law\sass\bootstrap\_code.scss" />
+    <Content Include="law\sass\bootstrap\_component-animations.scss" />
+    <Content Include="law\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="law\sass\bootstrap\_forms.scss" />
+    <Content Include="law\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="law\sass\bootstrap\_grid.scss" />
+    <Content Include="law\sass\bootstrap\_input-groups.scss" />
+    <Content Include="law\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="law\sass\bootstrap\_labels.scss" />
+    <Content Include="law\sass\bootstrap\_list-group.scss" />
+    <Content Include="law\sass\bootstrap\_media.scss" />
+    <Content Include="law\sass\bootstrap\_mixins.scss" />
+    <Content Include="law\sass\bootstrap\_modals.scss" />
+    <Content Include="law\sass\bootstrap\_navbar.scss" />
+    <Content Include="law\sass\bootstrap\_navs.scss" />
+    <Content Include="law\sass\bootstrap\_normalize.scss" />
+    <Content Include="law\sass\bootstrap\_pager.scss" />
+    <Content Include="law\sass\bootstrap\_pagination.scss" />
+    <Content Include="law\sass\bootstrap\_panels.scss" />
+    <Content Include="law\sass\bootstrap\_popovers.scss" />
+    <Content Include="law\sass\bootstrap\_print.scss" />
+    <Content Include="law\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="law\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="law\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="law\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="law\sass\bootstrap\_tables.scss" />
+    <Content Include="law\sass\bootstrap\_theme.scss" />
+    <Content Include="law\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="law\sass\bootstrap\_tooltip.scss" />
+    <Content Include="law\sass\bootstrap\_type.scss" />
+    <Content Include="law\sass\bootstrap\_utilities.scss" />
+    <Content Include="law\sass\bootstrap\_variables.scss" />
+    <Content Include="law\sass\bootstrap\_wells.scss" />
+    <Content Include="law\sass\style.scss" />
+    <Content Include="law\sass\_bootstrap-compass.scss" />
+    <Content Include="law\sass\_bootstrap-mincer.scss" />
+    <Content Include="law\sass\_bootstrap-sprockets.scss" />
+    <EntityDeploy Include="law\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="law\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="law\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="law\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="law\vehiclebook.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="law\app.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="law\about.aspx" />
+    <Content Include="law\about.html" />
+    <Content Include="law\blog.html" />
+    <Content Include="law\booking.aspx" />
+    <Content Include="law\contact.aspx" />
+    <Content Include="law\contact.html" />
+    <Content Include="law\css\animate.css" />
+    <Content Include="law\css\bootstrap.css" />
+    <Content Include="law\css\flexslider.css" />
+    <Content Include="law\css\icomoon.css" />
+    <Content Include="law\css\magnific-popup.css" />
+    <Content Include="law\css\owl.carousel.min.css" />
+    <Content Include="law\css\owl.theme.default.min.css" />
+    <Content Include="law\css\style.css" />
+    <Content Include="law\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="law\fonts\icomoon\icomoon.svg" />
+    <Content Include="law\home.aspx" />
+    <Content Include="law\images\img_bg_1.jpg" />
+    <Content Include="law\images\img_bg_2.jpg" />
+    <Content Include="law\images\img_bg_3.jpg" />
+    <Content Include="law\images\loader.gif" />
+    <Content Include="law\images\loc.png" />
+    <Content Include="law\images\project-1.jpg" />
+    <Content Include="law\images\project-2.jpg" />
+    <Content Include="law\images\project-3.jpg" />
+    <Content Include="law\images\project-4.jpg" />
+    <Content Include="law\images\project-5.jpg" />
+    <Content Include="law\images\project-6.jpg" />
+    <Content Include="law\images\project-7.jpg" />
+    <Content Include="law\images\s.jpg" />
+    <Content Include="law\images\s1.jpg" />
+    <Content Include="law\images\ss.jpg" />
+    <Content Include="law\images\user-1.jpg" />
+    <Content Include="law\images\user-2.jpg" />
+    <Content Include="law\images\video.jpg" />
+    <Content Include="law\index.html" />
+    <Content Include="law\js\bootstrap.min.js" />
+    <Content Include="law\js\google_map.js" />
+    <Content Include="law\js\jquery.countTo.js" />
+    <Content Include="law\js\jquery.easing.1.3.js" />
+    <Content Include="law\js\jquery.flexslider-min.js" />
+    <Content Include="law\js\jquery.magnific-popup.min.js" />
+    <Content Include="law\js\jquery.min.js" />
+    <Content Include="law\js\jquery.stellar.min.js" />
+    <Content Include="law\js\jquery.waypoints.min.js" />
+    <Content Include="law\js\magnific-popup-options.js" />
+    <Content Include="law\js\main.js" />
+    <Content Include="law\js\modernizr-2.6.2.min.js" />
+    <Content Include="law\js\owl.carousel.min.js" />
+    <Content Include="law\js\respond.min.js" />
+    <Content Include="law\login.aspx" />
+    <Content Include="law\practice.html" />
+    <Content Include="law\README.txt" />
+    <Content Include="law\userhome.aspx" />
+    <Content Include="law\won.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="law\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\admin_login.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\booking.aspx.designer.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="law\newreg.aspx.cs">
+      <DependentUpon>newreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\newreg.aspx.designer.cs">
+      <DependentUpon>newreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\registration.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\registration1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\request.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\request1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\request_book11.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\resource_list.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\SqlDatabaseSetup.cs" />
+    <Compile Include="law\SqlServerUnitTest1.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="law\userhome.aspx.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\userhome.aspx.designer.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="law\vehicle1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="law\vehiclebook.aspx.cs">
+      <DependentUpon>vehiclebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="law\vehiclebook.aspx.designer.cs">
+      <DependentUpon>vehiclebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62474</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62474/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
